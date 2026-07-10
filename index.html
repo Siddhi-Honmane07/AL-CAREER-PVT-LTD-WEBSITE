@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL Career Pvt Ltd.</title>
+    <!-- Importing correct premium serif fonts for the exact corporate look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* 1. TOP TICKER MARQUEE BANNER */
+        .top-ticker {
+            background-color: #134a8e;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 10px 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            /* Thin violetish blue border exactly matching reference 1000312545.jpg */
+            border-bottom: 5px solid #1e2a78;
+        }
+
+        .ticker-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+
+        /* 2. MAIN HEADER NAVIGATION BAR */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            height: 70px;
+            /* Perfectly sized for mobile viewports */
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Branding Area (Logo + Titles) */
+        .brand-section {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* AL Logo taking full vertical height space */
+        .logo-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+
+        .logo-container img {
+            height: 90%;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Text Titles Wrapper */
+        .titles-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        /* AL CAREER PVT LTD Title - Exact font, matching royal blue color */
+        .main-title {
+            font-family: 'Cinzel', serif;
+            color: #134a8e;
+            /* Matching the exact bright blue from CHRIST logo */
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 0.2px;
+            white-space: nowrap;
+            line-height: 1.1;
+        }
+
+        /* Tagline: inspiring excellence.building career */
+        .tagline {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #b58135;
+            font-size: 8.5px;
+            font-weight: 500;
+            letter-spacing: 0px;
+            text-transform: lowercase;
+            white-space: nowrap;
+            margin-top: 1px;
+        }
+
+        /* 3. ADMISSION PORTAL BUTTON (Right Corner Small Placement) */
+        .portal-button-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-shrink: 0;
+            margin-left: 5px;
+        }
+
+        .portal-btn {
+            background-color: #f7f9fa;
+            color: #13308e;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+            padding: 5px 8px;
+            /* Tighter padding to save space on mobile */
+            font-family: 'Roboto', sans-serif;
+            font-size: 9px;
+            /* Smaller font text */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+
+        /* Hamburger lines next to portal text */
+        .hamburger-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 12px;
+            height: 9px;
+            flex-shrink: 0;
+        }
+
+        .hamburger-icon span {
+            display: block;
+            height: 1.5px;
+            width: 100%;
+            background-color: #134a8e;
+        }
+
+        /* STALWART MOBILE RESPONSIVENESS PREVENTING ANY BREAKING */
+        @media screen and (max-width: 400px) {
+            .main-title {
+                font-size: 12.5px;
+                /* Safely balances size to fit portrait screens on a single line */
+            }
+
+            .tagline {
+                font-size: 7.2px;
+            }
+
+            .portal-btn {
+                font-size: 8px;
+                padding: 4px 6px;
+            }
+
+            .hamburger-icon {
+                width: 10px;
+                height: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Moving Announcement Top Bar with reference violet border applied -->
+    <div class="top-ticker">
+        <div class="ticker-text">
+            Admission open: New batches starting from July/Oct secure your seat now
+        </div>
+    </div>
+
+  <!-- Main Mobile Responsive Header Element -->
+<header class="main-header">
+    <!-- Logo container scaling to fit top/bottom white space completely -->
+    <div class="logo-wrapper">
+        <img src="logo.png.png" alt="AL Career Logo" class="header-logo-img">
+    </div>
+
+    <!-- Branding Text Section -->
+    <div class="branding-container">
+        <h1 class="brand-title">AL CAREER PVT LTD.</h1>
+        <p class="brand-tagline" style="color: #d98200 !important; font-style: italic !important;">Inspiring excellence building career</p>
+    </div>
+
+</header>
+   <!-- 3. HERO BANNER SECTION -->
+    <section class="hero-section">
+        <!-- Text and Button Content Layout -->
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Building <br>
+                <span class="highlight-text">Bright Futures.</span>
+            </h1>
+    
+        </div>
+    </section>
+
+    <style>
+        /* Target Mobile Portrait View for Header */
+@media (max-width: 480px) {
+    .main-header { 
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        gap: 12px !important; /* Pulls the title text close to the logo */
+        padding-left: 10px !important;
+        width: 100% !important;
+    }
+
+    /* Sets the inner text block to align neatly to the left side */
+    .main-header div, .main-header .brand-text {
+        text-align: left !important;
+        margin: 0 !important;
+    }
+}
+        /* HERO SECTION CONTAINER */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 56vw;
+            /* Maintains the precise aspect ratio of your reference image */
+            min-height: 240px;
+            /* Prevents text crowding on very small mobile devices */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('front page.png');
+            background-size: cover;
+            background-position: center right;
+            display: flex;
+            align-items: center;
+            padding-left: 8%;
+            overflow: hidden;
+        }
+
+        /* HERO CONTENT WRAPPER */
+        .hero-content {
+            z-index: 2;
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* TYPOGRAPHY STRUCTURE */
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            color: #ffffff;
+            font-size: 5vw;
+            /* Scales smoothly from desktop to mobile screens */
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+        }
+
+        /* Italicized White Text Accent */
+        .highlight-text {
+            font-style: italic;
+            color: #ffffff !important; /* CHANGED FROM GOLD TO PURE WHITE */
+        }
+
+        /* "KNOW MORE" BUTTON STYLE */
+        .cta-button {
+            display: inline-block;
+            align-self: flex-start;
+            background-color: #d98200;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.2vw;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 1.5vw 4vw;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #b86f00;
+        }
+    
+        /* ======================================================= */
+        /* PERFECT HEADER ALIGNMENT AND ORIGIN FONTS                */
+        /* ======================================================= */
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Aligns everything side-by-side right next to each other */
+            height: 90px;
+            background-color: #ffffff;
+            padding: 0 20px;
+            position: relative; /* Header stays in place at the top */
+            gap: 15px; /* Adds clean spacing right between your logo and text */
+            box-sizing: border-box;
+        }
+        .logo-wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .header-logo-img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+        .branding-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .brand-title {
+            font-size: 2.8rem !important;
+            color: #003366 !important; /* Exact original royal corporate blue */
+            font-family: 'Cinzel', Times, serif !important; /* Forces your original corporate classic font style */
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.1;
+        }
+        .brand-tagline {
+            font-size: 1.4rem !important;
+            font-style: italic;
+            font-family: Arial, sans-serif !important;
+            color: #888888 !important; /* Restored original subtle text grey tint */
+            margin: 4px 0 0 0;
+        }
+        .portal-button-container {
+            position: fixed; /* This makes ONLY the button stick when scrolling */
+            right: 20px;
+            top: 65px; /* Shifted down to line up perfectly in the middle of the white box */
+            z-index: 9999;
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+        .admission-portal-btn {
+            background-color: #003366 !important; /* Matches title blue background fill */
+            color: #ffffff !important;
+            border: none !important;
+            padding: 10px 16px;
+            font-family: Arial, sans-serif !important;
+            font-weight: 700;
+            font-size: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: slowBlink 2s infinite ease-in-out;
+        }
+        @keyframes slowBlink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        /* --------------------------------------------------- */
+        /* PHONE PORTRAIT RESPONSIVE SAFE GUARD               */
+        /* --------------------------------------------------- */
+        @media (max-width: 768px) {
+            .main-header {
+                justify-content: space-between; /* Spreads out logo and button on phones */
+            }
+            .portal-button-container {
+                position: relative !important; /* Disables screen-fixing on phones so it doesn't break mobile flow */
+                top: auto !important;
+                right: auto !important;
+                margin-left: auto;
+            }
+            .brand-title {
+                font-size: 1.8rem !important; /* Safely shrinks title so it doesn't hit the button on phones */
+            }
+            .brand-tagline {
+                font-size: 1rem !important;
+            }
+            .admission-portal-btn {
+                padding: 8px 12px;
+                font-size: 10px; /* Adapts size slightly for clean portrait layout */
+            }
+        }
+        /* ======================================================= */
+    
+        /* PORTRAIT MODE SMARTPHONE OPTIMIZATION */
+        @media screen and (max-width: 480px) {
+            .hero-section {
+                height: 65vw;
+                /* Slightly deeper height for beautiful mobile layout */
+                padding-left: 6%;
+                background-position: 65% center;
+                /* Tweaks image alignment so the woman stays clear */
+            }
+
+            .hero-content {
+                max-width: 65%;
+                gap: 8px;
+            }
+
+            .hero-title {
+                font-size: 6.5vw;
+                /* Enlarges text proportionally on phone viewports */
+            }
+
+            .cta-button {
+                font-size: 3.5vw;
+                padding: 2vw 5vw;
+                border-radius: 6px;
+            }
+
+            /* Mobile tweaks to keep logo and text side-by-side on a single line */
+            .main-header {
+                height: 70px;
+                padding: 0 10px;
+                gap: 8px;
+            }
+
+            .branding-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-width: 0;
+            }
+
+            .brand-title {
+                font-size: 1.15rem !important;
+                white-space: nowrap !important;
+            }
+
+            .brand-tagline {
+                font-size: 0.6rem !important;
+                white-space: nowrap !important;
+            }
+
+            /* FIX: Repositioned the button so it doesn't block the screen clickable area */
+            .admission-portal-btn {
+                background-color: #003366 !important;
+                color: #ffffff !important;
+                padding: 8px 12px;
+                font-size: 10px;
+                top: auto;
+                bottom: 15px;
+                right: 15px;
+                z-index: 99999 !important; /* Forces button to stay on top */
+            }
+
+            /* FIX: Ensures the pop-up boxes display beautifully inside mobile screens */
+        .modal-content, .popup-box, .contact-modal  {
+                width: 90% !important;
+                max-width: 360px !important;
+                left: 50% !important;
+                top: 50% !important;
+                transform: translate(-50%, -50%) !important;
+                position: fixed !important;
+                z-index: 100000 !important; /* Places pop-ups above the floating button */
+        }
+    }
+            
+    </style>
+    <!-- 4. PARENT COMPANY BLUE INFO SECTION -->
+   <!-- === 4. OUR PARENT COMPANY SECTION === -->
+<section class="parent-company-section">
+    <h2 class="section-title">Our Parent Institutes</h2>
+    
+    <div class="companies-wrapper">
+        <!-- Box 1 -->
+        <div class="company-card-box">
+            IIB<br>CAREER
+        </div>
+        
+        <!-- Box 2 -->
+        <div class="company-card-box">
+            ALLEN<br>CAREER
+        </div>
+        
+        <!-- Box 3 -->
+        <div class="company-card-box">
+            INFORMATICA<br>CLASSES
+        </div>
+    </div>
+</section>
+    <style>
+        /* MAIN BLUE CONTAINER */
+        .parent-company-section {
+            background-color: #283583;
+            /* Exact deep violetish-blue background from reference */
+            padding: 45px 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+        }
+
+        /* HEADING TYPOGRAPHY */
+        /* PARENT COMPANY MAIN SECTION */
+.parent-company-section {
+    background-color: #1e3a8a !important; /* Original deep blue background */
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff !important;
+    font-style: italic;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* FLEXBOX WRAPPER FOR SIDE-BY-SIDE ALIGNMENT */
+.companies-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows them to stack beautifully on small mobile screens */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* INDIVIDUAL YELLOW BOXES EXACTLY AS PICTURED WITH THIN BLACK BORDER */
+.company-card-box {
+    background-color: #d98200 !important; /* Original golden-orange fill */
+    color: #ffffff !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    
+    /* Box Dimensions */
+    width: 140px;
+    height: 140px;
+    
+    /* Center text vertically and horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Border Styling */
+    border-radius: 12px; /* Smooth corners as shown in image */
+    border: 1px solid #000000 !important; /* Crisp thin black perimeter border */
+    box-sizing: border-box;
+}
+
+        /* STRICT PORTRAIT MODE SMARTPHONE OPTIMIZATION */
+        @media screen and (max-width: 480px) {
+            .parent-company-section {
+                padding: 35px 12px;
+                gap: 20px;
+            }
+
+            .section-heading {
+                font-size: 20px;
+            }
+
+            .company-boxes-container {
+                gap: 12px;
+                /* Distinct, clean equal gaps on mobile */
+            }
+
+            .company-box {
+                font-size: 11.5px;
+                /* Noticeably bigger and highly readable text on mobile phones */
+                padding: 4px;
+                border-radius: 6px;
+            }
+        }
+
+        /* Extra small portrait screen safeguard */
+
+        @media screen and (max-width: 360px) {
+            .company-box {
+                font-size: 10.5px;
+            }
+        }
+
+        /* Extra small portrait screen safeguard */
+        @media screen and (max-width: 360px) {
+            .company-box {
+                font-size: 10.5px;
+            }
+        }
+
+        /* Adds a clean gap between the submit button and the vision section */
+        .programs-section {
+            margin-top: 50px;
+        }
+    </style>
+
+   <div class="programs-section">
+
+    <h2 class="programs-heading">
+        PROGRAMS AND FEE STRUCTURE
+    </h2>
+
+    <div class="programs-grid">
+
+        <div class="row-top">
+
+            <!-- CONTACT -->
+            <div class="program-pill" onclick="openContactModal()">
+
+                <div class="pill-icon">
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.09 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72l.38 2.57a2 2 0 0 1-.57 1.72l-1.2 1.2a16 16 0 0 0 6.13 6.13l1.2-1.2a2 2 0 0 1 1.72-.57l2.57.38A2 2 0 0 1 22 16.92z"/>
+
+                    </svg>
+                </div>
+
+                <span>CONTACT</span>
+
+            </div>
+
+            <!-- PROGRAMS -->
+            <div class="program-pill" onclick="openProgramsPage()">
+
+                <div class="pill-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M22 10L12 5 2 10l10 5 10-5z"/>
+                        <path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+
+                    </svg>
+
+                </div>
+
+                <span>PROGRAMS</span>
+
+            </div>
+
+        </div>
+
+        <div class="row-bottom">
+
+            <!-- FEE PAYMENT -->
+            <div class="program-pill fee-pill"
+                onclick="openFeeModal()">
+
+                <div class="pill-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <rect x="2"
+                            y="5"
+                            width="20"
+                            height="14"
+                            rx="2"/>
+
+                        <line x1="2"
+                            y1="10"
+                            x2="22"
+                            y2="10"/>
+
+                    </svg>
+
+                </div>
+
+                <span>FEE PAYMENT</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+        <!-- REGISTRATION RESPONSE MODAL POPUP -->
+<div id="registrationModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5); align-items: center; justify-content: center; box-sizing: border-box; padding: 16px;">
+    
+    <style>
+        @keyframes borderBlink {
+            0%, 100% { border-color: #ef4444; box-shadow: 0 10px 25px rgba(239, 68, 68, 0.2); }
+            50% { border-color: transparent; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
+        }
+        .blinking-modal-card {
+            animation: borderBlink 1s ease-in-out 2; /* Blinks twice upon appearing */
+        }
+    </style>
+
+    <div class="blinking-modal-card" style="background-color: #ffffff; width: 100%; max-width: 360px; border: 3px solid #ef4444; border-radius: 16px; padding: 32px 24px; box-sizing: border-box; text-align: center; position: relative;">
+        
+        <!-- Close Button (X) -->
+        <button onclick="document.getElementById('registrationModal').style.display = 'none'" style="position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 22px; color: #94a3b8; cursor: pointer; font-weight: 300;">&times;</button>
+        
+        <!-- Title: Matches 'Instant Admission Portal' font weight and deep blue color -->
+        <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #0f4c81; font-size: 22px; font-weight: 700; margin: 0 0 16px 0; letter-spacing: -0.3px;">
+            RESPONSE NOTED
+        </h2>
+        
+        <!-- Message Body -->
+        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #334155; font-size: 16px; line-height: 1.5; margin: 0 0 24px 0; font-weight: 400;">
+            Kindly make online payment through our app.
+        </p>
+
+        <!-- Okay Button -->
+        <button onclick="document.getElementById('registrationModal').style.display = 'none'" style="background-color: #0f4c81; color: #ffffff; border: none; border-radius: 8px; width: 100%; padding: 12px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s;">
+            Okay
+        </button>
+    </div>
+</div>
+
+<script>
+    // Intercept Form Submission to display the pop-up modal
+    document.addEventListener("DOMContentLoaded", function() {
+        // Targets the 'Submit Admission Application' form element
+        var form = document.querySelector("form");
+        if (form) {
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevents standard page redirect/reload
+                
+                // Triggers and shows the modal
+                var modal = document.getElementById("registrationModal");
+                if (modal) {
+                    modal.style.display = "flex";
+                }
+            });
+        }
+    });
+</script>
+       <!-- VISION, MISSION, GOAL CARDS SECTION -->
+<div style="width: 100%; padding: 0px 16px 40px 16px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px; background-color: #ffffff; align-items: center;">
+    
+    <!-- VISION CARD -->
+    <div style="width: 100%; max-width: 450px; background: #ffffff; border-radius: 24px; border: 1px solid #000000; box-shadow: 0 10px 30px rgba(160, 175, 190, 0.12); padding: 40px 24px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 68px; height: 68px; border-radius: 50%; background-color: #fffaf2; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+            <svg style="width: 32px; height: 32px;" viewBox="0 0 24 24" fill="none" stroke="#d98200" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+        </div>
+        <h3 style="font-family: 'Cinzel', serif; color: #134a8e; font-size: 21px; font-weight: 800; letter-spacing: 0.8px; margin: 5px 0 16px 0; text-transform: uppercase;">VISION</h3>
+        <p style="font-family: 'Roboto', sans-serif; color: #64748b; font-size: 15px; line-height: 1.65; margin: 0; font-weight: 400;">To impart academic excellence in Medical Education and serve the society with quality and affordable health care.</p>
+    </div>
+
+    <!-- MISSION CARD -->
+    <div style="width: 100%; max-width: 450px; background: #ffffff; border-radius: 24px; border: 1px solid #000000; box-shadow: 0 10px 30px rgba(160, 175, 190, 0.12); padding: 40px 24px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 68px; height: 68px; border-radius: 50%; background-color: #fffaf2; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+            <svg style="width: 32px; height: 32px;" viewBox="0 0 24 24" fill="none" stroke="#d98200" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                <line x1="4" y1="22" x2="4" y2="15"></line>
+            </svg>
+        </div>
+        <h3 style="font-family: 'Cinzel', serif; color: #134a8e; font-size: 21px; font-weight: 800; letter-spacing: 0.8px; margin: 5px 0 16px 0; text-transform: uppercase;">MISSION</h3>
+        <p style="font-family: 'Roboto', sans-serif; color: #64748b; font-size: 15px; line-height: 1.65; margin: 0; font-weight: 400;">To provide excellent medical education to students with a mix of traditional and advanced technology, as well as to improve the lives of the communities we serve through brilliance in learning and healing with quality care and support.</p>
+    </div>
+
+    <!-- OUR GOAL CARD -->
+    <div style="width: 100%; max-width: 450px; background: #ffffff; border-radius: 24px; border: 1px solid #000000; box-shadow: 0 10px 30px rgba(160, 175, 190, 0.12); padding: 40px 24px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div style="width: 68px; height: 68px; border-radius: 50%; background-color: #fffaf2; display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+            <svg style="width: 32px; height: 32px;" viewBox="0 0 24 24" fill="none" stroke="#d98200" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+        </div>
+        <h3 style="font-family: 'Cinzel', serif; color: #134a8e; font-size: 21px; font-weight: 800; letter-spacing: 0.8px; margin: 5px 0 16px 0; text-transform: uppercase;">OUR GOAL</h3>
+        <p style="font-family: 'Roboto', sans-serif; color: #64748b; font-size: 15px; line-height: 1.65; margin: 0; font-weight: 400;">To provide high-quality medical education as well as an environment that fosters the intellectual, emotional, and economic development of faculty, students, and support staff.</p>
+    </div>
+
+</div>
+
+</div>
+    </section>
+    <!-- ========================================== -->
+<!-- 1. CONTACT MODAL (COMPLETELY ISOLATED)     -->
+<!-- ========================================== -->
+<div id="contactModal" class="modal-overlay" onclick="closeContactModalExternal(event)">
+    <div class="modal-content">
+        <span class="modal-close-btn" onclick="closeContactModal()">&times;</span>
+
+        <div class="modal-line">
+            <span class="label-yellow">ADDRESS:</span><br>
+            <span class="label-custom-bracket">(ZONAL OFFICE)</span><br>
+            <span class="content-blue">AL Careers, Head Office NO 36/7/8 OGALE HERITAGE, MIDC ROAD OFFICE NO 02 MORWADI, PIMPRI PUNE, Pune 18, Maharashtra 411018.</span>
+        </div>
+
+        <div class="modal-line">
+            <span class="label-yellow">E MAIL:</span><br>
+            
+            <span class="content-blue">Rashmika@alcareer.org</span><br>
+             <span class="label-custom-bracket">(HEAD OFFICE-KOTA)</span>
+        </div>
+
+        <div class="modal-line">
+            <span class="label-yellow">MOB:</span><br>
+            <span class="content-blue">+91 9673504190</span>
+        </div>
+    </div>
+</div>
+
+<!-- ========================================== -->
+<!-- 2. FEE MODAL (WITH UPI SCANNER IMAGE)      -->
+<!-- ========================================== -->
+<div id="feeModal" class="modal-overlay" onclick="closeFeeModalExternal(event)">
+    <div class="modal-content fee-modal-adjustment">
+        <span class="modal-close-btn" onclick="closeFeeModal()">&times;</span>
+
+        <h3 class="fee-portal-heading">Secured Fee Portal</h3>
+
+        <div class="fee-notice-box">
+            <p>We have Automated all our transactions for better security purposes. Kindly do Online transfer through our Application (link for scanner given below:)</p>
+        </div>
+
+
+        <div class="scanner-outer-container">
+            <!-- Clickable image container wrapping your portrait image -->
+            <div class="scanner-bounding-box" onclick="triggerScannerError()">
+                <img src="QR.png.png" alt="UPI Scan & Pay" class="portrait-qr-image" />
+            </div>
+            <p class="scanner-footer-text">‹ Scan QR Code to Authenticate ›</p>
+        </div>
+    </div>
+</div>
+<!-- Custom Bank Error Popup Container -->
+<div id="bankErrorModal" class="custom-bank-modal-overlay" style="display: none;">
+    <div class="custom-bank-modal-card">
+        <h3 class="custom-bank-error-title">Gateway Busy</h3>
+        <p class="custom-bank-error-message">
+            App link has been sent in your registered ID
+        </p>
+        <button class="custom-bank-error-btn" onclick="closeBankErrorModal()">OK</button>
+    </div>
+</div>
+<!-- ========================================== -->
+<!-- 3. PROGRAMS PAGE (COMPLETELY ISOLATED)     -->
+<!-- ========================================== -->
+<div id="programsPage" class="fullscreen-page-view">
+    <div class="programs-page-content-scroll">
+        <div class="programs-page-banner">
+            <span class="page-back-arrow" onclick="closeProgramsPage()">&#8592;</span>
+            <h1 class="banner-title-text">PROGRAMS <br>&<br>FEE STRUCTURE<br></h1>
+        </div>
+
+        <div class="vertical-programs-container">
+            <div class="course-detail-card standard-jee-yellow">
+                <div class="course-card-header">
+                    <span class="course-title-label">JEE PROGRAM</span>
+                    <span class="course-badge-tag">ENGINEERING</span>
+                </div>
+                <div class="course-pricing-table">
+                    <div class="pricing-row-item"><span class="pricing-name">Non-Integrated Course</span><span class="pricing-value">₹6,00,000</span></div>
+                    <div class="pricing-row-item"><span class="pricing-name">Integrated Course</span><span class="pricing-value">₹24,0,000</span></div>
+                    <div class="pricing-row-item"><span class="pricing-name">Mock Drill Course</span><span class="pricing-value">₹1,0,000</span></div>
+                </div>
+            </div>
+
+            <div class="course-detail-card standard-neet-blue">
+                <div class="course-card-header">
+                    <span class="course-title-label">NEET PROGRAM</span>
+                    <span class="course-badge-tag">MEDICAL</span>
+                </div>
+                <div class="course-pricing-table">
+                    <div class="pricing-row-item"><span class="pricing-name">Non-Integrated Course</span><span class="pricing-value">₹7,0,000</span></div>
+                    <div class="pricing-row-item"><span class="pricing-name">Integrated Course</span><span class="pricing-value">₹26,0,000</span></div>
+                    <div class="pricing-row-item"><span class="pricing-name">Mock Drill Course</span><span class="pricing-value">₹2,0,000</span></div>
+                </div>
+            </div>
+
+            <div class="metrics-ticker-wrapper">
+                <div class="metrics-ticker-grid">
+                    <div class="metric-ticker-card">
+                        <div class="metric-ticker-number-row"><span class="metric-ticker-value" data-target="10">0</span><span class="metric-ticker-suffix">+</span></div>
+                        <div class="metric-ticker-label">Years of<br>Excellence</div>
+                    </div>
+                    <div class="metric-ticker-card">
+                        <div class="metric-ticker-number-row"><span class="metric-ticker-value" data-target="42">0</span><span class="metric-ticker-suffix">LPA</span></div>
+                        <div class="metric-ticker-label">Highest<br>Package</div>
+                    </div>
+                    <div class="metric-ticker-card">
+                        <div class="metric-ticker-number-row"><span class="metric-ticker-value" data-target="8000">0</span><span class="metric-ticker-suffix">+</span></div>
+                        <div class="metric-ticker-label">Students Awarded with<br>70% Scholarship</div>
+                    </div>
+                    <div class="metric-ticker-card">
+                        <div class="metric-ticker-number-row"><span class="metric-ticker-value" data-target="2">0</span><span class="metric-ticker-suffix">Lakh</span></div>
+                        <div class="metric-ticker-label">Alumni Across<br>States</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instant-admission-form-card">
+                <h3 class="admission-portal-main-title">✍️ Entrance Exam Portal</h3>
+                <p class="admission-portal-sub-tagline">(To Be Submitted Till 31 July 2026)</p>
+                <form id="examEntranceAdmissionForm" onsubmit="event.preventDefault(); return false;">
+                    <div class="admission-field-group">
+                        <label class="admission-form-label-text">Student Full Name</label>
+                        <input type="text" class="admission-form-input-control" placeholder="Enter full name" required />
+                    </div>
+                    <div class="admission-field-group">
+                        <label class="admission-form-label-text">Contact Number</label>
+                        <input type="tel" class="admission-form-input-control" placeholder="10-digit mobile number" pattern="[0-9]{10}" required />
+                    </div>
+                    <div class="admission-field-group">
+                        <label class="admission-form-label-text">Select Program Track</label>
+                        <select class="admission-form-select-control" required>
+                            <option value="" disabled selected>-- Choose Course --</option>
+                            <option value="jee-int">JEE Non-Integrated Course — ₹6,0,000</option>
+                            <option value="jee-non">JEE Integrated Course — ₹24,0,000</option>
+                            <option value="jee-mock">JEE Mock Drill Course — ₹1,0,000</option>
+                            <option value="neet-int">NEET Non-Integrated Course — ₹7,0,000</option>
+                            <option value="neet-non">NEET Integrated Course — ₹26,0,000</option>
+                            <option value="neet-mock">NEET Mock Drill Course — ₹2,0,000</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="if(document.getElementById('examEntranceAdmissionForm').reportValidity()) { document.getElementById('examPortalResponseModal').style.display = 'flex'; }" class="admission-submit-action-btn">Submit For Registration</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ========================================== -->
+<!-- 4. ISOLATED REGISTRATION RESPONSE MODAL    -->
+<!-- ========================================== -->
+<div id="examPortalResponseModal" style="display: none; position: fixed; z-index: 999999 !important; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.75); align-items: center; justify-content: center; box-sizing: border-box; padding: 20px;">
+    <style>
+        @keyframes slowBorderBlink {
+            0%, 100% { border-color: #ef4444 !important; box-shadow: 0 10px 30px rgba(239, 68, 68, 0.5) !important; }
+            50% { border-color: transparent !important; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1) !important; }
+        }
+        .portrait-blinking-card {
+            border: 4px solid #ef4444;
+            animation: slowBorderBlink 2s ease-in-out infinite !important;
+        }
+        /* Custom Bank Modal System Overlays */
+.custom-bank-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dims the background screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999; /* Forces it over the top of the fee modal */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Native-styled dark popup card optimized for mobile portrait view */
+.custom-bank-modal-card {
+    background-color: #2c3034; /* Premium dark modern dialog background */
+    color: #ffffff;
+    width: 100%;
+    max-width: 320px; /* Perfect compact width for standard mobile viewports */
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    animation: alertPopIn 0.2s ease-out;
+}
+
+.custom-bank-error-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.custom-bank-error-message {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #b9bec3;
+    margin-bottom: 24px;
+}
+
+.custom-bank-error-btn {
+    background-color: transparent;
+    color: #2f80ed; /* Interactive clean blue action link text */
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    border-top: 1px solid #41464c; /* Clean separation line */
+    transition: color 0.2s;
+}
+
+.custom-bank-error-btn:hover {
+    color: #569aff;
+}
+
+/* Smooth scaling pop animation */
+@keyframes alertPopIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+    </style>
+    <div class="portrait-blinking-card" style="background-color: #ffffff !important; width: 100% !important; max-width: 320px !important; border-radius: 16px !important; padding: 35px 20px !important; box-sizing: border-box !important; text-align: center !important; position: relative !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important;">
+        <button type="button" onclick="document.getElementById('examPortalResponseModal').style.display = 'none';" style="position: absolute !important; top: 12px !important; right: 16px !important; background: none !important; border: none !important; font-size: 26px !important; color: #94a3b8 !important; cursor: pointer !important; font-weight: 300 !important; line-height: 1 !important;">&times;</button>
+        <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important; color: #134a8e !important; font-size: 21px !important; font-weight: 700 !important; margin: 0 0 14px 0 !important; letter-spacing: -0.3px !important; text-transform: uppercase !important;">RESPONSE NOTED</h2>
+        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important; color: #334155 !important; font-size: 15px !important; line-height: 1.5 !important; margin: 0 0 24px 0 !important; font-weight: 500 !important;">Kindly make online payment through our app.</p>
+        <button type="button" onclick="document.getElementById('examPortalResponseModal').style.display = 'none';" style="background-color: #134a8e !important; color: #ffffff !important; border: none !important; border-radius: 8px !important; width: 100% !important; max-width: 140px !important; padding: 11px 0 !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important; font-size: 15px !important; font-weight: 600 !important; cursor: pointer !important;">Continue</button>
+    </div>
+</div>
+<!-- ========================================== -->
+<!-- 5. STYLES ARCHITECTURE                     -->
+<!-- ========================================== -->
+<style>
+
+/* ======================================================= */
+    /* LOCK VIEWPORT TO PREVENT SIDEWAYS BUMPING/MOVING ON PHONES */
+    /* ======================================================= */
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 1. APPLY TEXTURE TO THE MAIN SECTION BACKGROUND */
+    .programs-section { 
+        background-color: #ffffff; 
+        background-image: 
+            linear-gradient(135deg, #f5f5f5 25%, transparent 25%), 
+            linear-gradient(225deg, #f5f5f5 25%, transparent 25%), 
+            linear-gradient(45deg, #f5f5f5 25%, transparent 25%), 
+            linear-gradient(315deg, #f5f5f5 25%, #ffffff 25%);
+        background-position: 40px 0, 40px 0, 0 0, 0 0;
+        background-size: 80px 80px;
+        background-repeat: repeat;
+        padding: 0px 15px 60px 15px; 
+        margin-top: -5px !important; 
+        text-align: center; 
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+/* ============================= */
+/* PROGRAM & FEE STRUCTURE */
+/* ============================= */
+
+.programs-section{
+    width:100%;
+    padding:20px 12px 8px;
+    text-align:center;
+}
+
+.programs-heading{
+    font-size:28px;
+    font-weight:800;
+    color:#0b3f7c;
+    letter-spacing:1px;
+    margin-bottom:22px;
+}
+
+.programs-grid{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+}
+
+.row-top{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:28px;
+    width:100%;
+}
+
+.row-bottom{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.program-pill{
+    width:235px;
+    height:68px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    border-radius:60px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#1e88e5,#1565c0,#0d47a1);
+
+border:1px solid rgba(255,255,255,.18);
+
+box-shadow:
+0 12px 28px rgba(13,71,161,.30),
+0 3px 10px rgba(0,0,0,.12);
+
+transition:.35s;
+}
+
+.program-pill:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 32px rgba(13,71,161,.35);
+}
+
+.program-pill:active{
+    transform:scale(.97);
+}
+
+.program-pill::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-130%;
+    width:50%;
+    height:100%;
+    background:rgba(255,255,255,.22);
+    transform:skewX(-25deg);
+    transition:.8s;
+}
+
+.program-pill:hover::before{
+    left:150%;
+}
+
+.fee-pill{
+    width:290px;
+}
+
+.pill-icon{
+    width:24px;
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.pill-icon svg{
+    width:24px;
+    height:24px;
+}
+
+.program-pill span{
+    color:#fff;
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:.7px;
+    text-transform:uppercase;
+}
+
+
+/* ============================= */
+/* MOBILE PORTRAIT */
+/* ============================= */
+
+@media(max-width:768px){
+
+.programs-section{
+    padding:18px 0 5px;
+}
+
+.programs-heading{
+    font-size:22px;
+    margin-bottom:18px;
+}
+
+.programs-grid{
+    width:100%;
+    align-items:center;
+}
+
+.row-top{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    margin:0 auto;
+}
+
+.row-bottom{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:14px auto 0;
+}
+
+.program-pill{
+    width:150px;
+    height:58px;
+    flex:0 0 150px;
+    margin:0;
+}
+
+.fee-pill{
+    width:220px;
+    flex:0 0 220px;
+    margin:0 auto;
+}
+
+.programs-section,
+.programs-grid,
+.row-top,
+.row-bottom{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.pill-icon svg{
+    width:21px;
+    height:21px;
+}
+
+.program-pill span{
+    font-size:15px;
+}
+
+}
+
+
+    .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.65); z-index: 9999; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; }
+    .modal-content { background-color: #ffffff; width: 100%; max-width: 400px; border-radius: 14px; padding: 40px 25px 30px 25px; position: relative; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); text-align: left; box-sizing: border-box; animation: modalFadeIn 0.2s ease-out; }
+    @keyframes modalFadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    .modal-close-btn { position: absolute; top: 14px; right: 18px; font-size: 30px; color: #94a3b8; cursor: pointer; font-weight: bold; line-height: 1; }
+    .modal-line { font-family: 'Roboto', sans-serif; margin-bottom: 24px; line-height: 1.45; }
+    .modal-line:last-of-type { margin-bottom: 0; }
+    .label-yellow { color: #d98200; font-size: 20px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.3px; }
+    .content-blue { color: #3163a3; font-size: 17px; font-weight: 500; display: inline-block; margin-top: 5px; word-break: break-word; }
+    .label-custom-bracket { color: #d98200 !important; font-size: 17px !important; font-weight: 500 !important; text-transform: none !important; font-family: 'Roboto', sans-serif !important; display: inline-block; margin-top: 5px; }
+    
+    .fee-modal-adjustment { text-align: center !important; padding: 45px 22px 30px 22px !important; }
+    .fee-portal-heading { color: #004b8f !important; font-weight: 800; font-family: 'Roboto', sans-serif; text-transform: uppercase; font-size: 22px; letter-spacing: 0.5px; }
+    .fee-notice-box { background-color: #fff1f2; border-left: 4px solid #dc2626; border-radius: 6px; padding: 16px 14px; text-align: left; margin-bottom: 30px; box-sizing: border-box; }
+    .fee-notice-box p { font-family: 'Roboto', sans-serif; color: #dc2626; font-size: 14.5px; font-weight: 600; line-height: 1.5; margin: 0; }
+    .scanner-outer-container { display: flex; flex-direction: column; align-items: center; width: 100%; }
+    .scanner-bounding-box { border: 2px dashed #cbd5e1; border-radius: 16px; padding: 8px; background-color: #ffffff; display: inline-block; box-sizing: border-box; margin-bottom: 12px; cursor: pointer; transition: transform 0.1s ease, background-color 0.2s ease; max-width: 240px; width: 100%; }
+    .portrait-qr-image { width: 100%; height: auto; display: block; border-radius: 10px; object-fit: contain; }
+    .realistic-qr-svg { width: 155px; height: 155px; display: block; }
+    .scanner-footer-text { font-family: 'Roboto', sans-serif; color: #94a3b8; font-size: 13.5px; font-weight: 600; margin: 0; letter-spacing: 0.3px; }
+    
+    /* 2. APPLY TEXTURE TO THE FULLSCREEN SECOND PAGE MAIN CONTAINER BODY (EXCLUDES BANNER) */
+    .fullscreen-page-view { 
+        display: none; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: #f8fafc; 
+        background-image: 
+            linear-gradient(135deg, #f5f5f5 25%, transparent 25%), 
+            linear-gradient(225deg, #f5f5f5 25%, transparent 25%), 
+            linear-gradient(45deg, #f5f5f5 25%, transparent 25%), 
+            linear-gradient(315deg, #f5f5f5 25%, #f8fafc 25%);
+        background-position: 40px 0, 40px 0, 0 0, 0 0;
+        background-size: 80px 80px;
+        background-repeat: repeat;
+        z-index: 10000; 
+        box-sizing: border-box; 
+        overflow-x: hidden; /* Prevent horizontal movement */
+    }
+    
+    /* KEEP BANNER BACKGROUND SEPARATE (STAYS AS ITS ORIGINAL DARK GRAPHIC/BLUE IMAGE) */
+    .programs-page-banner{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 90px 40px;
+    background-color: #134a8e;
+    background-image: url('second page.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+    .page-back-arrow { position: absolute; top: 25px; left: 20px; font-size: 26px; color: #ffffff; cursor: pointer; font-weight: bold; transition: opacity 0.2s ease; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5); }
+    .page-back-arrow:active { opacity: 0.6; }
+    
+    .banner-title-text{
+    font-family: 'Times New Roman', Times, Georgia, serif !important;
+    font-style: italic !important;
+    color: #03a3ed;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin: 0;
+    margin-left: -40px;   /* Move title left */
+    line-height: 1.3;
+    text-align: left;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+    max-width: 45%;
+}
+    .programs-page-content-scroll { width: 100%; height: 100%; overflow-y: auto; overflow-x: hidden; box-sizing: border-box; }
+    .vertical-programs-container { display: flex; flex-direction: column; gap: 25px; width: 100%; max-width: 420px; margin: 0 auto; padding: 0 15px 40px 15px; box-sizing: border-box; }
+    .course-detail-card { width: 100%; border-radius: 16px; padding: 24px 20px; border: 1px solid #000000; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12); box-sizing: border-box; text-align: left; }
+    .standard-jee-yellow { background-color: #d98200; }
+    .standard-neet-blue { background-color: #134a8e; }
+    .course-card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.25); padding-bottom: 14px; margin-bottom: 18px; }
+    .course-title-label { font-family: 'Roboto', sans-serif; color: #ffffff; font-size: 21px; font-weight: 800; letter-spacing: -0.2px; }
+    .course-badge-tag { font-family: 'Roboto', sans-serif; font-size: 10.5px; font-weight: 700; color: #ffffff; background-color: rgba(255, 255, 255, 0.18); padding: 4px 10px; border-radius: 20px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .course-pricing-table { display: flex; flex-direction: column; gap: 16px; }
+    .pricing-row-item { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed rgba(255, 255, 255, 0.2); padding-bottom: 8px; }
+    .pricing-row-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .pricing-name { font-family: 'Roboto', sans-serif; color: #ffffff; font-size: 15px; font-weight: 500; }
+    .pricing-value { font-family: 'Roboto', sans-serif; color: #ffffff; font-size: 17px; font-weight: 700; text-align: right; }
+    .metrics-ticker-wrapper { background-color: #d98200; width: 100%; padding: 25px 15px; border-radius: 16px; border: 1px solid #000000; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12); box-sizing: border-box; margin-top: 5px; }
+    .metrics-ticker-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; width: 100%; }
+    .metric-ticker-card { display: flex; flex-direction: column; align-items: center; text-align: center; color: #ffffff; font-family: 'Roboto', sans-serif; position: relative; }
+    .metric-ticker-number-row { display: flex; align-items: baseline; justify-content: center; font-weight: 900; line-height: 1; margin-bottom: 6px; }
+    .metric-ticker-value { font-size: 32px; letter-spacing: -0.5px; }
+    .metric-ticker-suffix { font-size: 20px; font-weight: 700; margin-left: 2px; }
+    .metric-ticker-label { font-size: 12px; font-weight: 500; line-height: 1.3; opacity: 0.95; }
+    .instant-admission-form-card { background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 28px 20px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06); text-align: left; box-sizing: border-box; width: 100%; }
+    .admission-portal-main-title { font-family: 'Roboto', sans-serif; color: #134a8e; font-size: 22px; font-weight: 800; margin: 0 0 6px 0; }
+    .admission-portal-sub-tagline { font-family: 'Roboto', sans-serif; color: #d98200; font-size: 13px; font-weight: 600; line-height: 1.4; margin: 0 0 24px 0; }
+    .admission-field-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; width: 100%; }
+    .admission-form-label-text { font-family: 'Roboto', sans-serif; color: #d98200; font-size: 14px; font-weight: 700; }
+    .admission-form-input-control, .admission-form-select-control { font-family: 'Roboto', sans-serif; width: 100%; height: 45px; background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 0 14px; font-size: 14px; color: #334155; box-sizing: border-box; outline: none; transition: border-color 0.2s ease; }
+    .admission-form-input-control:focus, .admission-form-select-control:focus { border-color: #134a8e; background-color: #ffffff; }
+    .admission-form-select-control { appearance: none; background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 14px center; background-size: 16px; padding-right: 40px; cursor: pointer; }
+    .admission-submit-action-btn { font-family: 'Roboto', sans-serif; width: 100%; height: 48px; background-color: #134a8e; color: #ffffff; font-size: 15px; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; margin-top: 10px; box-shadow: 0 3px 8px rgba(19, 74, 142, 0.25); transition: opacity 0.15s ease; }
+    .admission-submit-action-btn:active { opacity: 0.9; }
+
+    @media screen and (max-width: 480px) {
+        .programs-section { padding: 45px 12px; }
+        .programs-heading { font-size: 18px; margin-bottom: 30px; }
+        .programs-grid { gap: 12px; max-width: 310px; }
+        .row-top { gap: 12px; }
+        .row-bottom .program-box { flex: 0 1 calc(50% - 6px); }
+        .program-box { font-size: 11px; gap: 8px; }
+        .box-icon { width: 28px; height: 28px; }
+        .modal-overlay { padding: 12px; }
+        .modal-content { padding: 35px 20px 25px 20px; max-width: 100%; width: 100%; border-radius: 12px; }
+        .label-yellow { font-size: 18.5px; }
+        .content-blue { font-size: 15.5px; }
+        .fee-portal-heading { font-size: 21px !important; margin-bottom: 20px !important; }
+        .fee-notice-box { padding: 12px 11px; margin-bottom: 22px; }
+        .fee-notice-box p { font-size: 12.5px; }
+        .realistic-qr-svg { width: 130px; height: 130px; }
+        .scanner-footer-text { font-size: 11.5px; }
+        .scanner-bounding-box { max-width: 190px !important; margin: 0 auto 12px auto !important; }
+        
+       .programs-page-banner{
+    padding:110px 15px 90px 15px !important;
+    justify-content:flex-start !important;
+    align-items:center;
+}
+        .page-back-arrow { top: 20px; left: 15px; font-size: 24px; }
+        .banner-title-text{
+    font-size:19px;
+    text-align:left !important;
+    margin-left:0 !important;
+    padding-left:0 !important;
+    max-width:55%;
+    align-self:flex-start;
+
+}
+        
+        .programs-page-content-scroll { padding: 0; }
+        .vertical-programs-container { gap: 20px; padding: 0 12px 30px 12px; }
+        .course-detail-card { padding: 18px 14px; border-radius: 12px; }
+        .course-title-label { font-size: 16.5px; }
+        .pricing-name { font-size: 13.5px; }
+        .pricing-value { font-size: 14.5px; }
+        .metrics-ticker-grid { grid-template-columns: 1fr; gap: 20px; }
+        .metric-ticker-value { font-size: 34px; }
+        .metric-ticker-suffix { font-size: 22px; }
+        .metrics-ticker-grid .metric-ticker-card:not(:last-child) { border-bottom: 1px solid rgba(0, 0, 0, 0.15); padding-bottom: 20px; }
+        .instant-admission-form-card { padding: 22px 16px; }
+        .admission-portal-main-title { font-size: 19px; }
+        .parent-box, .cta-button, .company-card, [class*="box"] { font-size: calc(14px + 0.6vw) !important; font-weight: 700 !important; text-transform: uppercase; letter-spacing: 0.5px; word-break: break-word !important; overflow: hidden !important; padding: 10px !important; box-sizing: border-box !important; }
+        .parent-box, .cta-button, .company-card, [class*="box"] { font-size: 14px !important; line-height: 1.2 !important; padding: 8px !important; }
+    }
+</style>
+
+<!-- ========================================== -->
+<!-- 6. JAVASCRIPT FUNCTIONS LAYER              -->
+<!-- ========================================== -->
+<script>
+    function openContactModal() {
+        document.getElementById('contactModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function openProgramsPage() {
+        document.getElementById('programsPage').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+
+        setTimeout(() => {
+            const counterElements = document.querySelectorAll('[data-target]');
+            counterElements.forEach(el => {
+                if (typeof runCounterAnimation === 'function') {
+                    runCounterAnimation(el);
+                }
+            });
+        }, 100);
+    }
+
+    function openFeeModal() {
+        document.getElementById('feeModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeContactModal() {
+        document.getElementById('contactModal').style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    function closeFeeModal() {
+        document.getElementById('feeModal').style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    function closeProgramsPage() {
+        document.getElementById('programsPage').style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    function closeContactModalExternal(event) {
+        if (event.target.id === 'contactModal') {
+            closeContactModal();
+        }
+    }
+
+    function closeFeeModalExternal(event) {
+        if (event.target.id === 'feeModal') {
+            closeFeeModal();
+        }
+    }
+
+    function triggerScannerError() {
+    var bankModal = document.getElementById('bankErrorModal');
+    if (bankModal) {
+        bankModal.style.display = 'flex';
+    }
+}
+
+function closeBankErrorModal() {
+    var bankModal = document.getElementById('bankErrorModal');
+    if (bankModal) {
+        bankModal.style.display = 'none';
+    }
+}
+
+    function runCounterAnimation(element) {
+        const targetVal = parseInt(element.getAttribute('data-target'), 10);
+        let activeCount = 0;
+        const totalDuration = targetVal > 100 ? 1200 : 600;
+        const executionFrameStep = Math.ceil(targetVal / (totalDuration / 16));
+
+        const countingProgressLoop = () => {
+            activeCount += executionFrameStep;
+            if (activeCount >= targetVal) {
+                element.textContent = targetVal.toLocaleString('en-IN');
+            } else {
+                element.textContent = activeCount.toLocaleString('en-IN');
+                requestAnimationFrame(countingProgressLoop);
+            }
+        };
+        requestAnimationFrame(countingProgressLoop);
+    }
+   
+</script>
+
+
+  
