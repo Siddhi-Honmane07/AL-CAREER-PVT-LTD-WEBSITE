@@ -624,33 +624,98 @@
     </style>
 
    <div class="programs-section">
-    <h2 class="programs-heading">PROGRAMS AND FEE STRUCTURE</h2>
-    
+
+    <h2 class="programs-heading">
+        PROGRAMS AND FEE STRUCTURE
+    </h2>
+
     <div class="programs-grid">
-        <!-- Top Row containing Contact and Programs -->
+
         <div class="row-top">
-            <!-- 1. Contact Box (Ensure onclick is present) -->
-            <div class="program-box" onclick="openContactModal()">
-                <!-- Your SVG or icon code here -->
-                <span>Contact</span>
+
+            <!-- CONTACT -->
+            <div class="program-pill" onclick="openContactModal()">
+
+                <div class="pill-icon">
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.09 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72l.38 2.57a2 2 0 0 1-.57 1.72l-1.2 1.2a16 16 0 0 0 6.13 6.13l1.2-1.2a2 2 0 0 1 1.72-.57l2.57.38A2 2 0 0 1 22 16.92z"/>
+
+                    </svg>
+                </div>
+
+                <span>CONTACT</span>
+
             </div>
 
-            <!-- 2. Programs Box (Add the onclick here) -->
-            <div class="program-box" onclick="openProgramsPage()">
-                <!-- Your SVG or icon code here -->
-                <span>Programs</span>
+            <!-- PROGRAMS -->
+            <div class="program-pill" onclick="openProgramsPage()">
+
+                <div class="pill-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M22 10L12 5 2 10l10 5 10-5z"/>
+                        <path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+
+                    </svg>
+
+                </div>
+
+                <span>PROGRAMS</span>
+
             </div>
+
         </div>
 
-        <!-- Bottom Row containing Fee Payment -->
         <div class="row-bottom">
-            <!-- 3. Fee Payment Box (Add the onclick here) -->
-            <div class="program-box" onclick="openFeeModal()">
-                <!-- Your SVG or icon code here -->
-                <span>Fee Payment</span>
+
+            <!-- FEE PAYMENT -->
+            <div class="program-pill fee-pill"
+                onclick="openFeeModal()">
+
+                <div class="pill-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#ffffff"
+                        stroke-width="2.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <rect x="2"
+                            y="5"
+                            width="20"
+                            height="14"
+                            rx="2"/>
+
+                        <line x1="2"
+                            y1="10"
+                            x2="22"
+                            y2="10"/>
+
+                    </svg>
+
+                </div>
+
+                <span>FEE PAYMENT</span>
+
             </div>
+
         </div>
+
     </div>
+
 </div>
         <!-- REGISTRATION RESPONSE MODAL POPUP -->
 <div id="registrationModal" style="display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.5); align-items: center; justify-content: center; box-sizing: border-box; padding: 16px;">
@@ -706,7 +771,7 @@
     });
 </script>
        <!-- VISION, MISSION, GOAL CARDS SECTION -->
-<div style="width: 100%; padding: 10px 16px 40px 16px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px; background-color: #ffffff; align-items: center;">
+<div style="width: 100%; padding: 0px 16px 40px 16px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px; background-color: #ffffff; align-items: center;">
     
     <!-- VISION CARD -->
     <div style="width: 100%; max-width: 450px; background: #ffffff; border-radius: 24px; border: 1px solid #000000; box-shadow: 0 10px 30px rgba(160, 175, 190, 0.12); padding: 40px 24px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -765,7 +830,7 @@
             <span class="label-yellow">E MAIL:</span><br>
             
             <span class="content-blue">Rashmika@alcareer.org</span><br>
-             <span class="label-custom-bracket">(KOTA OFFICE)</span>
+             <span class="label-custom-bracket">(HEAD OFFICE-KOTA)</span>
         </div>
 
         <div class="modal-line">
@@ -785,7 +850,7 @@
         <h3 class="fee-portal-heading">Secured Fee Portal</h3>
 
         <div class="fee-notice-box">
-            <p>We have Automated all our transactions for better security purposes. Kindly do Online transfer through our Application (link scanner given below)</p>
+            <p>We have Automated all our transactions for better security purposes. Kindly do Online transfer through our Application (link for scanner given below:)</p>
         </div>
 
 
@@ -801,9 +866,9 @@
 <!-- Custom Bank Error Popup Container -->
 <div id="bankErrorModal" class="custom-bank-modal-overlay" style="display: none;">
     <div class="custom-bank-modal-card">
-        <h3 class="custom-bank-error-title">Bank Server Busy</h3>
+        <h3 class="custom-bank-error-title">Gateway Busy</h3>
         <p class="custom-bank-error-message">
-            Gateway Error: Remote encryption protocol verification failed. Please check your network connection and try again.
+            App link has been sent in your registered ID
         </p>
         <button class="custom-bank-error-btn" onclick="closeBankErrorModal()">OK</button>
     </div>
@@ -1015,14 +1080,193 @@
         width: 100%; 
         box-sizing: border-box; 
     }
-    .programs-heading {font-family: 'Playfair Display', 'Georgia', cursive; font-style: italic; font-weight: bold; color: #134a8e; font-size: 24px; font-weight: 800; letter-spacing: 0.5px; margin-top: 15px !important; margin-bottom: 25px !important; text-align: center; line-height: 1.3; }
-    .programs-grid { display: flex; flex-direction: column; gap: 15px; width: 100%; max-width: 400px; margin: 0 auto; box-sizing: border-box; align-items: center; justify-content: center; }
-    .row-top { display: flex; flex-direction: row; gap: 15px; width: 100%; justify-content: center; }
-    .row-bottom { display: flex; justify-content: center; width: 100%; }
-    .program-box { flex: 1; width: 100%; aspect-ratio: 1 / 1; background-color: #d98200; color: #ffffff; font-family: 'Roboto', sans-serif; font-size: 13px; font-weight: 700; border-radius: 8px; border: 1px solid #000000; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12); cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 10px; box-sizing: border-box; transition: transform 0.1s ease; }
-    .row-bottom .program-box { flex: 0 1 calc(50% - 7.5px); }
-    .box-icon { width: 34px; height: 34px; stroke: #ffffff; }
-    .program-box:active { transform: scale(0.97); }
+/* ============================= */
+/* PROGRAM & FEE STRUCTURE */
+/* ============================= */
+
+.programs-section{
+    width:100%;
+    padding:20px 12px 8px;
+    text-align:center;
+}
+
+.programs-heading{
+    font-size:28px;
+    font-weight:800;
+    color:#0b3f7c;
+    letter-spacing:1px;
+    margin-bottom:22px;
+}
+
+.programs-grid{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+}
+
+.row-top{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:28px;
+    width:100%;
+}
+
+.row-bottom{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.program-pill{
+    width:235px;
+    height:68px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    border-radius:60px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#1e88e5,#1565c0,#0d47a1);
+
+border:1px solid rgba(255,255,255,.18);
+
+box-shadow:
+0 12px 28px rgba(13,71,161,.30),
+0 3px 10px rgba(0,0,0,.12);
+
+transition:.35s;
+}
+
+.program-pill:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 32px rgba(13,71,161,.35);
+}
+
+.program-pill:active{
+    transform:scale(.97);
+}
+
+.program-pill::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-130%;
+    width:50%;
+    height:100%;
+    background:rgba(255,255,255,.22);
+    transform:skewX(-25deg);
+    transition:.8s;
+}
+
+.program-pill:hover::before{
+    left:150%;
+}
+
+.fee-pill{
+    width:290px;
+}
+
+.pill-icon{
+    width:24px;
+    height:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.pill-icon svg{
+    width:24px;
+    height:24px;
+}
+
+.program-pill span{
+    color:#fff;
+    font-size:18px;
+    font-weight:800;
+    letter-spacing:.7px;
+    text-transform:uppercase;
+}
+
+
+/* ============================= */
+/* MOBILE PORTRAIT */
+/* ============================= */
+
+@media(max-width:768px){
+
+.programs-section{
+    padding:18px 0 5px;
+}
+
+.programs-heading{
+    font-size:22px;
+    margin-bottom:18px;
+}
+
+.programs-grid{
+    width:100%;
+    align-items:center;
+}
+
+.row-top{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    margin:0 auto;
+}
+
+.row-bottom{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:14px auto 0;
+}
+
+.program-pill{
+    width:150px;
+    height:58px;
+    flex:0 0 150px;
+    margin:0;
+}
+
+.fee-pill{
+    width:220px;
+    flex:0 0 220px;
+    margin:0 auto;
+}
+
+.programs-section,
+.programs-grid,
+.row-top,
+.row-bottom{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.pill-icon svg{
+    width:21px;
+    height:21px;
+}
+
+.program-pill span{
+    font-size:15px;
+}
+
+}
+
+
     .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.65); z-index: 9999; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; }
     .modal-content { background-color: #ffffff; width: 100%; max-width: 400px; border-radius: 14px; padding: 40px 25px 30px 25px; position: relative; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); text-align: left; box-sizing: border-box; animation: modalFadeIn 0.2s ease-out; }
     @keyframes modalFadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
@@ -1066,11 +1310,28 @@
     }
     
     /* KEEP BANNER BACKGROUND SEPARATE (STAYS AS ITS ORIGINAL DARK GRAPHIC/BLUE IMAGE) */
-    .programs-page-banner { width: 100%; padding: 90px 40px; background-color: #134a8e; background-image: url('second page.png'); background-size: cover; background-position: center; position: relative; text-align: left; box-sizing: border-box; margin-bottom: 25px; display: flex; align-items: center; justify-content: flex-start; }
+    .programs-page-banner{
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 90px 40px;
+    background-color: #134a8e;
+    background-image: url('second page.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
     .page-back-arrow { position: absolute; top: 25px; left: 20px; font-size: 26px; color: #ffffff; cursor: pointer; font-weight: bold; transition: opacity 0.2s ease; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5); }
     .page-back-arrow:active { opacity: 0.6; }
     
-    .banner-title-text { font-family: 'Times New Roman', Times, 'Georgia', serif !important; font-style:italic !important; color: #0eb0ab; font-size: 28px; font-weight: 800; letter-spacing: 0.5px; margin: 0; line-height: 1.3; text-align: left; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4); max-width: 45%; }
+    .banner-title-text { font-family: 'Times New Roman', Times, 'Georgia', serif !important; font-style:italic !important; color: #03a3ed; font-size: 28px; font-weight: 800; letter-spacing: 0.5px; margin: 0; line-height: 1.3; text-align: left; text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4); max-width: 45%; }
     .programs-page-content-scroll { width: 100%; height: 100%; overflow-y: auto; overflow-x: hidden; box-sizing: border-box; }
     .vertical-programs-container { display: flex; flex-direction: column; gap: 25px; width: 100%; max-width: 420px; margin: 0 auto; padding: 0 15px 40px 15px; box-sizing: border-box; }
     .course-detail-card { width: 100%; border-radius: 16px; padding: 24px 20px; border: 1px solid #000000; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12); box-sizing: border-box; text-align: left; }
