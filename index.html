@@ -960,7 +960,60 @@
                             <option value="neet-mock">NEET Mock Drill Course — ₹2,00,000</option>
                         </select>
                     </div>
-                    <button type="button" onclick="if(document.getElementById('examEntranceAdmissionForm').reportValidity()) { document.getElementById('examPortalResponseModal').style.display = 'flex'; }" class="admission-submit-action-btn">Submit For Registration</button>
+                    <!-- Submit Button & NEFT/Net Banking Link Container -->
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%; gap: 10px;">
+    
+    <!-- Submit Button -->
+    <button type="button" onclick="if(document.getElementById('examEntranceAdmissionForm').reportValidity()) { document.getElementById('examPortalResponseModal').style.display = 'flex'; }" class="admission-submit-action-btn" style="width: 100%;">Submit For Registration</button>
+    
+    <!-- Underlined Blue Link Below Button -->
+    <a href="javascript:void(0);" onclick="document.getElementById('neftBankDetailsModal').style.display = 'flex';" style="font-family: 'Roboto', sans-serif; color: #1e40af; font-size: 13px; text-decoration: underline; cursor: pointer; text-align: center; font-weight: 500;">
+        Click here for NEFT / Net banking details
+    </a>
+
+</div>
+
+<!-- Bank Details Pop-up Modal -->
+<div id="neftBankDetailsModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 9999; justify-content: center; align-items: center; padding: 16px; box-sizing: border-box;">
+    
+    <div style="background: #ffffff; width: 100%; max-width: 380px; border-radius: 16px; padding: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); position: relative; box-sizing: border-box; font-family: 'Roboto', sans-serif;">
+        
+        <!-- Close Button (X) -->
+        <span onclick="document.getElementById('neftBankDetailsModal').style.display = 'none';" style="position: absolute; top: 12px; right: 16px; font-size: 22px; cursor: pointer; color: #64748b; font-weight: bold;">&times;</span>
+        
+        <!-- Title -->
+        <h3 style="color: #0f172a; font-size: 18px; margin: 0 0 16px 0; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; text-align: center;">
+            <span style="color: #0d47a1; font-weight: 700;">Bank Details</span>
+        </h3>
+        
+        <!-- Details List -->
+        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; text-align: left;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #e2e8f0; padding-bottom: 6px;">
+                <span style="color: #0d47a1; font-weight: 700;">Bank:</span>
+                <span style="color: #0284c7; font-weight: 500;">Saraswat Bank</span>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #e2e8f0; padding-bottom: 6px;">
+                <span style="color: #0d47a1; font-weight: 700;">Account Name:</span>
+                <span style="color: #0284c7; font-weight: 500;">Ruta Ajay Dixit</span>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed #e2e8f0; padding-bottom: 6px;">
+                <span style="color: #0d47a1; font-weight: 700;">Account No.:</span>
+                <span style="color: #0284c7; font-weight: 500;">024200100010794</span>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="color: #0d47a1; font-weight: 700;">IFSC Code:</span>
+                <span style="color: #0284c7; font-weight: 500;">SRCB0000024</span>
+            </div>
+        </div>
+
+        <!-- Close Action Button -->
+        <button type="button" onclick="document.getElementById('neftBankDetailsModal').style.display = 'none';" style="margin-top: 20px; width: 100%; padding: 10px; background-color: #0d47a1; color: white; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;">Close</button>
+    </div>
+
+</div>
                 </form>
             </div>
         </div>
