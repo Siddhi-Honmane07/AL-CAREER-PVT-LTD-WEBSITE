@@ -500,7 +500,7 @@
             gap: 16px;
         }
         .admit-card-prompt-text {
-            color: #d71920;
+            color: #39FF14;
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             line-height: 1.4;
@@ -656,14 +656,14 @@
     </style>
 
     <section class="admit-card-prompt" aria-label="Admit card download">
-        <p class="admit-card-prompt-text">Click below button to download admit card</p>
-        <button type="button" class="admit-card-open-button" onclick="openAdmitAccessModal()">Download Admit Card</button>
+        <p class="admit-card-prompt-text">Click below button to download result</p>
+        <button type="button" class="admit-card-open-button" onclick="openAdmitAccessModal()">Download result</button>
     </section>
 
     <!-- Receipt validation form popup -->
     <div id="admitAccessModal" class="admit-access-overlay" role="dialog" aria-modal="true" aria-labelledby="admitAccessTitle">
         <div class="admit-access-panel">
-            <h2 id="admitAccessTitle" class="admit-access-title">Admit Card Access</h2>
+            <h2 id="admitAccessTitle" class="admit-access-title">Result Access</h2>
             <p class="admit-access-description">Enter your name and receipt number to view your admit card.</p>
             <form id="admitAccessForm" onsubmit="return submitAdmitCardRequest(event)">
                 <label class="admit-access-field">
@@ -695,7 +695,7 @@
         <div class="admit-access-panel admit-card-panel">
             <button type="button" class="admit-access-cancel" style="display:block; margin:0 0 12px auto; padding:8px 12px; border:0; border-radius:6px;" onclick="closeAdmitCardImage()">Close</button>
             <img class="admit-card-image" src="admit%20card.png.jpeg" alt="Admit Card" onerror="this.alt='Admit card image not found. Please upload admit card.png beside index.html in GitHub.'; this.style.minHeight='90px'; this.style.border='1px solid #d71920';">
-            <a class="admit-card-download-link" href="admit%20card.png.jpeg" download="admit card.png.jpeg">Download Admit Card Image</a>
+            <a class="admit-card-download-link" href="admit%20card.png.jpeg" download="admit card.png.jpeg">Download result Image</a>
         </div>
     </div>
 
